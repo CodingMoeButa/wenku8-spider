@@ -6,13 +6,14 @@ import tomd
 
 '''
     Title: 针对轻小说文库（wenku8.net）的垂直式爬虫
-    Version: 1.0.0
+    Version: 1.0.1
     Author: Ricky
     Github: https://github.com/ricky50575/wenku8-spider
     Website: http://lightnovel.moe/
 '''
 
 aid = 0
+aid = int(input('Start from aid: '))
 cid = 0
 errorPages = 0
 maxErrorPages = 10
@@ -78,3 +79,4 @@ while errorPages < maxErrorPages:
         aid +=1
 
 conn.close()
+input('Press the Enter key to continue...')
